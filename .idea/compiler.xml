@@ -7,13 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
+        <module name="gateway" />
         <module name="hello-consumer" />
         <module name="hello-producer" />
-        <module name="springmicroservice1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="hello-consumer" target="1.8" />
       <module name="hello-producer" target="1.8" />
       <module name="springmicroservice1" target="1.5" />

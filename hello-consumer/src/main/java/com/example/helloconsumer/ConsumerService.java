@@ -17,9 +17,9 @@ public class ConsumerService {
 
     @HystrixCommand(fallbackMethod = "dummyMessage")
     public String getMessage() {
-        URI uri = URI.create("http://HELLO-PRODUCER/message");
+        URI uri = URI.create("http://hello-producer/message");
         URI testUri = URI.create("http://localhost:8082/message");
-        return this.restTemplate.getForObject(testUri, String.class);
+        return this.restTemplate.getForObject(uri, String.class);
     }
 
     public String dummyMessage() {
